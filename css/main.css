@@ -370,16 +370,10 @@ html {
   font-size: 15px;
 }
 
-.space {
-  margin: 0 0 20px 0;
-  padding: 0;
-  font-size: 6.146rem;
-}
-
 p {
-  letter-spacing: 1px;
   font-size: 0.937rem;
   line-height: 25px;
+  letter-spacing: 1px;
   color: #D0D6F9;
 }
 
@@ -398,6 +392,12 @@ p,
 li,
 h4 {
   font-family: "Barlow Condensed", sans-serif;
+}
+
+.space {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 6.146rem;
 }
 
 .u-center-text {
@@ -433,23 +433,24 @@ h4 {
 .explore {
   width: 150px;
   height: 150px;
+  margin: 95px auto;
   padding: 0;
-  margin: 0 auto;
-  background-color: #fff;
   color: black;
+  background-color: #fff;
   border-radius: 50%;
+  font-size: 1.793rem;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.793rem;
-  letter-spacing: 1px;
 }
-.explore h5 {
+.explore__text {
   padding-top: 5px;
 }
 
 header {
   height: 90px;
+  margin-bottom: 325x;
   color: white;
   display: flex;
   justify-content: space-between;
