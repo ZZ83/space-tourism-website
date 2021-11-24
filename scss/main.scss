@@ -1,15 +1,9 @@
-@use "abstract/colors";
-@use "abstract/variables";
-@use "abstract/mixins.scss";
+// Order still matters
 
-@use "base/base";
-@use "base/typography";
-@use "base/utilities";
-@use "base/normalise";
+@use 'abstract';
+@use 'base';
+@use 'components';
+@use 'layout';
 
-@use "components/form";
 
-@use "layout/grid";
-@use "layout/background";
 
-@use "pages/home";
