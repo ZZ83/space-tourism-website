@@ -1,0 +1,30 @@
+.travel-description {
+    padding-bottom: 25px;
+    border-bottom: 1.5px solid rgba(151, 151, 151, 0.2);
+    &__header {
+        margin-bottom: 5px;
+    }
+}
+
+.time-distance {
+    padding-bottom: 50px;
+    &__distance {
+        padding: 0;
+        margin: 40px 0 15px 0;
+        
+    }
+
+    &__km {
+        margin: 0;
+    }
+
+    &__time {
+        padding: 0;
+        margin: 40px 0 15px 0;
+        
+    }
+
+    &__length {
+        margin: 0;
+    }
+}

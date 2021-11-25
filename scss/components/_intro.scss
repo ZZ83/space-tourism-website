@@ -1,0 +1,12 @@
+@use '../abstract/colors';
+
+.intro {
+    &__text {
+        color: colors.$white;
+    }
+    &__number {
+        color: colors.$gray;
+        font-weight: bold;
+    }
+}
+

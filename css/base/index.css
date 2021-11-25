@@ -343,19 +343,20 @@ body {
   text-align: c;
 }
 
-.home {
-  width: 90%;
-  margin: 0 auto;
-}
-
 ul {
   padding: 0;
   list-style: none;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #5a5a5a;
 }
 
 html {
@@ -369,15 +370,33 @@ p {
   color: #D0D6F9;
 }
 
+h1 {
+  font-size: 3.429rem;
+}
+
+h2 {
+  font-size: 2.178rem;
+}
+
 h4 {
   font-size: 1rem;
   letter-spacing: 0.29em;
   color: #D0D6F9;
 }
 
+h5 {
+  font-size: 0.878rem;
+  letter-spacing: 0.2em;
+  color: #D0D6F9;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   font-weight: 400;
+}
+
+li {
+  letter-spacing: 2px;
 }
 
 p,
@@ -393,13 +412,6 @@ h4 {
 }
 
 /*Media query mixin*/
-/*
-Use for pseudo code
-*/
-/*Uses for keyframe*/
-/*Uses for animation*/
-/*CSS PREFIX*/
-/*Center content vertically*/
 .u-center-text {
   text-align: center;
 }

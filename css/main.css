@@ -1,11 +1,4 @@
 /*Media query mixin*/
-/*
-Use for pseudo code
-*/
-/*Uses for keyframe*/
-/*Uses for animation*/
-/*CSS PREFIX*/
-/*Center content vertically*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -351,19 +344,20 @@ body {
   text-align: c;
 }
 
-.home {
-  width: 90%;
-  margin: 0 auto;
-}
-
 ul {
   padding: 0;
   list-style: none;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #5a5a5a;
 }
 
 html {
@@ -377,15 +371,33 @@ p {
   color: #D0D6F9;
 }
 
+h1 {
+  font-size: 3.429rem;
+}
+
+h2 {
+  font-size: 2.178rem;
+}
+
 h4 {
   font-size: 1rem;
   letter-spacing: 0.29em;
   color: #D0D6F9;
 }
 
+h5 {
+  font-size: 0.878rem;
+  letter-spacing: 0.2em;
+  color: #D0D6F9;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   font-weight: 400;
+}
+
+li {
+  letter-spacing: 2px;
 }
 
 p,
@@ -435,45 +447,131 @@ h4 {
   height: 150px;
   margin: 95px auto;
   padding: 0;
-  color: black;
   background-color: #fff;
   border-radius: 50%;
-  font-size: 1.793rem;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .explore__text {
+  font-size: 1.296rem;
+  color: #0B0D17;
   padding-top: 5px;
+}
+
+.intro__text {
+  color: #FFFFFF;
+}
+.intro__number {
+  color: #808080;
+  font-weight: bold;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.planet {
+  width: 170px;
+  height: 170px;
+  display: block;
+  margin: 50px auto;
+}
+
+.travel-description {
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid rgba(151, 151, 151, 0.2);
+}
+.travel-description__header {
+  margin-bottom: 5px;
+}
+
+.time-distance {
+  padding-bottom: 50px;
+}
+.time-distance__distance {
+  padding: 0;
+  margin: 40px 0 15px 0;
+}
+.time-distance__km {
+  margin: 0;
+}
+.time-distance__time {
+  padding: 0;
+  margin: 40px 0 15px 0;
+}
+.time-distance__length {
+  margin: 0;
 }
 
 header {
   height: 90px;
   margin-bottom: 325x;
-  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
-.home {
+.crew, .destination, .home {
   height: 100vh;
-  background-image: url(../images/home/background-home-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
 }
+
+.home {
+  background-image: url("../images/home/background-home-mobile.jpg");
+}
 @media only screen and (min-width: 768px) {
   .home {
-    background-image: url(../images/home/background-home-tablet.jpg);
+    background-image: url("../images/home/background-home-tablet.jpg");
   }
 }
 @media only screen and (min-width: 1440px) {
   .home {
-    background-image: url(../images/home/background-home-desktop.jpg);
+    background-image: url("../images/home/background-home-desktop.jpg");
   }
+}
+
+.destination {
+  background-image: url("../../images/destination/background-destination-mobile.jpg");
+}
+@media only screen and (min-width: 768px) {
+  .destination {
+    background-image: url("../../images/destination/background-destination-tablet.jpg");
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .destination {
+    background-image: url("../../images/destination/background-destination-desktop.jpg");
+  }
+}
+
+.crew {
+  background-image: url("../../images/crew/background-crew-mobile.jpg");
+}
+@media only screen and (min-width: 768px) {
+  .crew {
+    background-image: url("../../images/crew/background-crew-tablet.jpg");
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .crew {
+    background-image: url("../../images/crew/background-crew-desktop.jpg");
+  }
+}
+
+.destination-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.destination-nav li a {
+  color: #D0D6F9;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+@use '../abstract/colors';
+
+.destination-nav {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0  auto;
+    
+    li a {
+        color: colors.$tropical-blue;
+    }
+}

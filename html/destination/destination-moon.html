@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../css/main.css">
+		<title>Frontend Mentor | Space tourism website</title>
+	</head>
+	<body class="destination">
+		<div class="wrapper">
+			<header>
+				<a href="../../index.html"><img class="logo" src="../../images/shared/logo.svg" alt="Logo Shape"></a>
+				<img src="../../images/shared/icon-hamburger.svg" alt="Hambuger Menu">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+				<nav style="display: none;">
+					<ul>
+						<li><a href="../../index.html">HOME</a></li>
+						<li><a href="html/destination/destination-moon.html">DESTINATION</a></li>
+						<li><a href="html/crew/crew-commander.html">CREW</a></li>
+						<li><a href="html/destination/destination-moon.html">TECHNOLOGY</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+				<div class="intro">
+					<h4 class="intro__text"><span class="intro__number">01&nbsp;&nbsp;</span>Pick your destination</h4>
+				</div>
+				<img class="planet" src="../../images/destination/image-moon.png" alt="The Moon">
 
-  01 Pick your destination
+				<nav >
+					<ul class="destination-nav">
+						<li><a href="../../index.html">MOON</a></li>
+						<li><a href="html/destination/destination-moon.html">MARS</a></li>
+						<li><a href="html/crew/crew-commander.html">EUROPA</a></li>
+						<li><a href="html/destination/destination-moon.html">TITAN</a></li>
+					</ul>
+				</nav>
 
-  Moon
-  Mars
-  Europa
-  Titan
+				<section class="travel-description">
+					<h1 class="travel-description__header">MOON</h1>
+					<p class="travel-description__text">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+				</section>
+					
+					
+				
 
-  Moon
+				<section class="time-distance">
+					<h5 class="time-distance__distance">AVG. DISTANCE</h5>
+					<h2 class="time-distance__km">384,400 KM</h2>
+					<h5 class="time-distance__time">EST. TRAVEL TIME</h5>
+					<h2 class="time-distance__length">3 DAYS</h2>
+				</section>
+			</main>
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
 
-  Avg. distance
-  384,400 km
+			
+			
 
-  Est. travel time
-  3 days
-</body>
+			
+		</div>
+	</body>
 </html>
