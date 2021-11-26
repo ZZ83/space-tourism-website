@@ -14,16 +14,41 @@
 		<div class="wrapper">
 			<header>
 				<a href="index.html"><img class="logo" src="images/shared/logo.svg" alt="Logo Shape"></a>
-				<img src="images/shared/icon-hamburger.svg" alt="Hambuger Menu">
 
-				<nav>
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="html/destination/destination-moon.html">DESTINATION</a></li>
-						<li><a href="html/crew/crew-commander.html">CREW</a></li>
-						<li><a href="html/destination/destination-moon.html">TECHNOLOGY</a></li>
+
+
+				<button class="mobile-nav-toggle" aria-controls="main-nav" aria-expanded="false">
+					<span class="sr-only">Menu</span>
+				</button>
+
+
+			
+
+				<!-- Add the nav class back to the UL element and fix the associated scss file with it -->
+
+
+
+
+				<nav id="main-nav" class="main-nav" data-visible="false">
+
+					<ul class="main-nav__list" >
+
+						<li class="main-nav__item">
+							<a class="main-nav__link" href=""><bold aria-hidden="true">00&nbsp;</bold>HOME</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link" href="html/destination/destination-moon.html"><bold aria-hidden="true">01&nbsp;</bold>DESTINATION</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link"href="html/crew/crew-commander.html"><bold aria-hidden="true">02&nbsp;</bold>CREW</a>
+						</li>
+						<li class="main-nav__item">
+							<a class="main-nav__link"href="html/destination/destination-moon.html" aria-hidden="true"><bold>03&nbsp;</bold>TECHNOLOGY</a>
+						</li>
 					</ul>
 				</nav>
+
+
 			</header>
 
 			<h4>SO, YOU WANT TO TRAVEL TO</h4>
@@ -38,5 +63,6 @@
 
 			
 		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

@@ -1,0 +1,30 @@
+.main-nav {
+    
+    width: 250px;
+    padding-top: 5rem;
+    position: fixed;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    // position: fixed;
+    // inset: 0 0 0 30%;
+    background:rgba(14, 14, 14, 0.9);
+    z-index: 100;
+    transform: translateX(100%);
+    @supports (backdrop-filter: blur(3rem)) {
+        backdrop-filter: blur(3rem);
+        background: rgba(255, 255, 255, 0.005);
+    }
+    &__item {
+        padding-left: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    &__link  {
+        color: white;
+        letter-spacing: 0.2rem;
+    }    
+}
+
+.main-nav[data-visible="true"] {
+    transform: translateX(0%);
+}
