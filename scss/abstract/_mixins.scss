@@ -21,3 +21,22 @@
         }
     }
 }
+
+%placeholder-name{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@mixin background-urls($arg1, $arg2, $arg3 ) {
+    @extend %placeholder-name;
+    background-image: url($arg1);
+    @media only screen and (min-width: 768px) {
+        background-image: url($arg2);
+    }
+    @media only screen and (min-width: 1440px) {
+        background-image: url($arg3);
+    }
+}

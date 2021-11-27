@@ -5,15 +5,6 @@ html {
     font-size: 15px;
 }
 
-
-
-p {
-    font-size: 0.937rem;
-    line-height: 25px;
-    letter-spacing: 1px;
-    color: colors.$tropical-blue;
-}
-
 h1 {
     font-size: 3.429rem;  
 }
@@ -32,7 +23,6 @@ h4 {
     color: colors.$tropical-blue;
 }
 
-
 h5 {
     font-size: 0.878rem;
     letter-spacing: 0.2em;
@@ -43,13 +33,26 @@ h6 {
 
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    text-align: center;
-    font-weight: 400; 
+p {
+    font-size: 0.937rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: colors.$tropical-blue;
+}
+
+b {
+    font-weight: 700;
+    margin-inline-end: 0.5em;
 }
 
 li {
     letter-spacing: 2px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+    font-weight: 400; 
 }
 
 p,
@@ -57,8 +60,6 @@ li,
 h4 {
     font-family: 'Barlow Condensed', sans-serif;
 }
-
-
 
 .space {
     margin:  0 0 20px 0;

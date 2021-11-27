@@ -1,7 +1,10 @@
 header {
-    height: 90px;
+    height: 7rem;
     margin-bottom: 325x;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (min-width: 1440px) {
+        padding-top: 50px;
+    }
 }

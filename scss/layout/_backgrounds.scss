@@ -1,27 +1,8 @@
 @use '../abstract/variables';
-
-
-%placeholder-name{
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-@mixin mixinname($arg1, $arg2, $arg3 ) {
-    @extend %placeholder-name;
-    background-image: url($arg1);
-    @media only screen and (min-width: 768px) {
-        background-image: url($arg2);
-    }
-    @media only screen and (min-width: 1440px) {
-        background-image: url($arg3);
-    }
-}
+@use '../abstract/mixins';
 
 .home {
-    @include mixinname (
+    @include mixins.background-urls (
         variables.$mobile-home-url,
         variables.$tablet-home-url,
         variables.$desktop-home-url, 
@@ -29,7 +10,7 @@
 }
 
 .destination {
-    @include mixinname (
+    @include mixins.background-urls (
         variables.$mobile-destination-url,
         variables.$tablet-destination-url,
         variables.$desktop-destination-url, 
@@ -37,7 +18,7 @@
 }
 
 .crew {
-    @include mixinname (
+    @include mixins.background-urls (
         variables.$mobile-crew-url,
         variables.$tablet-crew-url,
         variables.$desktop-crew-url, 
