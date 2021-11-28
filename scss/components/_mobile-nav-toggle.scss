@@ -7,7 +7,7 @@
     background-color: transparent;
     background-image: url(../../images/shared/icon-hamburger.svg);
     background-repeat: no-repeat;
-    z-index: 999;
+    z-index: 100;
     &[aria-expanded="true"] {
         background-image: url(../../images/shared/icon-close.svg);
     }

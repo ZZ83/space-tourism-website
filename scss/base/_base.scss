@@ -42,6 +42,9 @@ li {
         cursor: pointer;
         border: 0;
         border-bottom: .2rem solid transparent;
+        &:hover {
+            border-color: gray; 
+        }
     }
 }
 
@@ -63,5 +66,8 @@ li {
 }
 
 .active {
-    border-color: white;
+    @media only screen and (min-width: 768px) {
+        border-color: white;
+        pointer-events: none;
+    }
 }
