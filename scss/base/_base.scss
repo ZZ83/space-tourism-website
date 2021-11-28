@@ -1,8 +1,8 @@
-html, body {
+html, 
+body {
     margin:0px;
     background-color: #0B0D17;
 }
-
 
 body {
     font-family: 'Bellefair', serif;
@@ -30,6 +30,21 @@ ul {
     list-style: none;
 }
 
+b {
+    @media screen and (min-width: 768px) and (max-width: 1440px) { 
+        display: none;
+    }
+}
+
+li {
+    @media only screen and (min-width: 768px) {
+        padding-bottom: -1px;
+        cursor: pointer;
+        border: 0;
+        border-bottom: .2rem solid transparent;
+    }
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -45,19 +60,6 @@ ul {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap; /* added line */
     border: 0;
-}
-
-// TODO: Turn these into helper classes
-li {
-    cursor: pointer;
-    padding: 2.8rem 0;
-    border: 0;
-    border-bottom: .2rem solid transparent;
-    padding-bottom: -1px;
-}
-
-li:hover {
-    border-color: gray;  
 }
 
 .active {

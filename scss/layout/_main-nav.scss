@@ -21,6 +21,7 @@
         backdrop-filter: blur(3rem);
     }
     @media only screen and (min-width: 768px) {
+        gap: 5rem;
         height: 7rem;
         padding: 0 3rem;
         position: relative;
@@ -28,9 +29,14 @@
         align-items: center;
         flex-direction: row;
         transform: translateX(0%);
+        &__item {
+            padding: 2.8rem 0;
+        }
+        &__item:hover {
+            border-color: gray;  
+        }
     }
     @media only screen and (min-width: 1440px) {
-        gap: 5rem;
         order: 2;
         padding: 0 15rem 0 10rem;
     }
