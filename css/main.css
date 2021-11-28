@@ -360,12 +360,6 @@ body {
   margin: auto;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -375,6 +369,12 @@ hr {
   height: 1px;
   border: none;
   background-color: #5a5a5a;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .wrapper {
@@ -393,6 +393,22 @@ hr {
   white-space: nowrap;
   /* added line */
   border: 0;
+}
+
+li {
+  cursor: pointer;
+  padding: 2.8rem 0;
+  border: 0;
+  border-bottom: 0.2rem solid transparent;
+  padding-bottom: -1px;
+}
+
+li:hover {
+  border-color: gray;
+}
+
+.active {
+  border-color: white;
 }
 
 html {
@@ -590,6 +606,21 @@ header {
     padding-top: 50px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  header::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background: red;
+    order: 1;
+    margin-right: -5rem;
+    z-index: 99999;
+    background: #FFFFFF;
+    opacity: 0.25;
+  }
+}
 
 .home {
   background-image: url("../images/home/background-home-mobile.jpg");
@@ -633,6 +664,10 @@ header {
   }
 }
 
+.main-nav-wrapper {
+  order: 2;
+}
+
 .main-nav {
   padding: 8rem 2rem;
   display: flex;
@@ -663,6 +698,13 @@ header {
     align-items: center;
     flex-direction: row;
     transform: translateX(0%);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-nav {
+    gap: 5rem;
+    order: 2;
+    padding: 0 15rem 0 10rem;
   }
 }
 

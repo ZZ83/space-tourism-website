@@ -7,4 +7,19 @@ header {
     @media only screen and (min-width: 1440px) {
         padding-top: 50px;
     }
+    @media only screen and (min-width: 1440px) {
+        &::after {
+            content: '';
+            display: block;
+            position: relative;
+            height: 1px;
+            width: 100%;
+            background: red;
+            order: 1;
+            margin-right: -5rem;
+            z-index: 99999;
+            background: #FFFFFF;
+            opacity: 0.25;
+        }
+    }
 }

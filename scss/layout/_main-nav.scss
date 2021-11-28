@@ -1,3 +1,7 @@
+.main-nav-wrapper {
+    order: 2;
+}
+
 .main-nav {
     padding: 8rem 2rem;
     display: flex;
@@ -25,4 +29,11 @@
         flex-direction: row;
         transform: translateX(0%);
     }
+    @media only screen and (min-width: 1440px) {
+        gap: 5rem;
+        order: 2;
+        padding: 0 15rem 0 10rem;
+    }
 }
+
+
