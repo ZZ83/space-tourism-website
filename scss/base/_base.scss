@@ -1,16 +1,18 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
 html, 
 body {
-    margin:0px;
-    background-color: #0B0D17;
+    margin: 0px;
 }
 
 body {
     font-family: 'Bellefair', serif;
     color: #fff;
-    text-align: c;
     overflow-x: hidden;
     max-width: 1920px;
-    margin: auto;
+    background-color: #0B0D17;
 }
 
 a {
@@ -46,11 +48,6 @@ li {
             border-color: gray; 
         }
     }
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
 }
 
 .sr-only {
