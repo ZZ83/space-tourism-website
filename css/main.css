@@ -386,18 +386,6 @@ ul {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  li {
-    padding-bottom: -1px;
-    cursor: pointer;
-    border: 0;
-    border-bottom: 0.2rem solid transparent;
-  }
-  li:hover {
-    border-color: gray;
-  }
-}
-
 hr {
   width: 80%;
   background-color: rgba(151, 151, 151, 0.2);
@@ -426,10 +414,34 @@ hr {
   border: 0;
 }
 
+.d-underlines {
+  border-bottom: 0.2rem solid transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .underlines {
+    border-bottom: 0.2rem solid transparent;
+  }
+}
+
+.d-active {
+  border-color: white;
+  pointer-events: none;
+}
+
 @media only screen and (min-width: 768px) {
   .active {
     border-color: white;
     pointer-events: none;
+  }
+}
+
+.mb-active {
+  border-right: 5px solid white;
+}
+@media only screen and (min-width: 768px) {
+  .mb-active {
+    border-right: 0;
   }
 }
 
@@ -812,7 +824,7 @@ header {
 }
 
 .main-nav {
-  padding: 8rem 2rem;
+  padding: 8rem 0 0 2rem;
   display: flex;
   gap: 3rem;
   z-index: 90;
@@ -832,6 +844,9 @@ header {
     backdrop-filter: blur(3rem);
   }
 }
+.main-nav__item {
+  padding: 1rem;
+}
 @media only screen and (min-width: 768px) {
   .main-nav {
     height: 6.558rem;
@@ -844,6 +859,9 @@ header {
   }
   .main-nav__item {
     padding: 2.8rem 1rem;
+  }
+  .main-nav__item:hover {
+    border-color: gray;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -861,7 +879,12 @@ header {
   margin: 0 auto;
 }
 .destination-nav li {
-  padding: 0.7rem 0;
+  padding: 0.5rem 0;
+}
+@media only screen and (min-width: 768px) {
+  .destination-nav li:hover {
+    border-color: gray;
+  }
 }
 .destination-nav li a {
   font-size: 1rem;

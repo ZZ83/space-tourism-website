@@ -3,7 +3,7 @@
 }
 
 .main-nav {
-    padding: 8rem 2rem;
+    padding: 8rem 0 0 2rem;
     display: flex;
     gap: 3rem;
     z-index: 90;
@@ -20,6 +20,10 @@
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(3rem);
     }
+
+    &__item {
+        padding: 1rem;
+    }
     @media only screen and (min-width: 768px) {
         height: 6.558rem;
         padding: 0 2rem;
@@ -30,6 +34,9 @@
         transform: translateX(0%);
         &__item {
             padding: 2.8rem 1rem;
+        }
+        &__item:hover {
+            border-color: gray; 
         }
     }
     @media only screen and (min-width: 1440px) {

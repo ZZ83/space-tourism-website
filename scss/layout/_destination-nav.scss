@@ -7,7 +7,13 @@
     justify-content: space-between;
     margin: 0 auto;
     li {
-        padding: 0.7rem 0;
+        padding: 0.5rem 0;
+    }
+
+    li:hover {
+        @media only screen and (min-width: 768px) {
+            border-color: gray;
+        }
     }
     li a {
         font-size: 1rem;

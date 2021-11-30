@@ -38,17 +38,16 @@ b {
     }
 }
 
-li {
-    @media only screen and (min-width: 768px) {
-        padding-bottom: -1px;
-        cursor: pointer;
-        border: 0;
-        border-bottom: .2rem solid transparent;
-        &:hover {
-            border-color: gray; 
-        }
-    }
-}
+// li {
+//     @media only screen and (min-width: 768px) {
+//         cursor: pointer;
+//         border: 0;
+//         border-bottom: .2rem solid transparent;
+//         &:hover {
+//             border-color: gray; 
+//         }
+//     }
+// }
 
 hr {
     width: 80%;
@@ -74,9 +73,31 @@ hr {
     border: 0;
 }
 
+.d-underlines {
+    border-bottom: .2rem solid transparent;
+}
+
+.underlines {
+    @media only screen and (min-width: 768px) {
+        border-bottom: .2rem solid transparent;
+    }
+}
+
+.d-active {
+    border-color: white;
+    pointer-events: none;
+}
+
 .active {
     @media only screen and (min-width: 768px) {
         border-color: white;
         pointer-events: none;
+    }
+}
+
+.mb-active {
+    border-right: 5px solid white;
+    @media only screen and (min-width: 768px) {
+        border-right: 0;
     }
 }
