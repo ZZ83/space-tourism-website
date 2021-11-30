@@ -11,57 +11,62 @@
 		<title>Frontend Mentor | Space tourism website</title>
 	</head>
 	<body class="destination">
-		<div class="wrapper">
-			<header>
-				<a href="../../index.html"><img class="logo" src="../../images/shared/logo.svg" alt="Logo Shape"></a>
-				<img src="../../images/shared/icon-hamburger.svg" alt="Hambuger Menu">
+		<header>
+			<a href="../../index.html"><img class="logo" src="../../images/shared/logo.svg" alt="Logo Shape"></a>
+			<button class="mobile-nav-toggle" aria-controls="main-nav" aria-expanded="false">
+				<span class="sr-only">Menu</span>
+			</button>
+			<nav class="main-nav-wrapper">
+				<ul id="main-nav"class="main-nav" data-visible="false">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="../../index.html"><b aria-hidden="true">00</b>HOME</a>
+					</li>
+					<li class="main-nav__item active">
+						<a class="main-nav__link" href="/html/destination/destination-moon.html"><b aria-hidden="true">01</b>DESTINATION</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link"href="html/crew/crew-commander.html"><b aria-hidden="true">02</b>CREW</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link"href="html/destination/destination-moon.html" aria-hidden="true"><b>03</b>TECHNOLOGY</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="intro">
+				<h4 class="intro__text"><span class="intro__number">01&nbsp;&nbsp;</span>PICK YOUR DESTINATION</h4>
+			</div>
+			<div class="destination-page">
+				<img class="planet" src="../../images/destination/image-europa.png" alt="Jupiter's moon Europa">
+				<div class="destination-page__inner">
+					<nav >
+						<ul class="destination-nav">
+							<li><a href="destination-moon.html">MOON</a></li>
+							<li><a href="destination-mars.html">MARS</a></li>
+							<li class="active"><a href="destination-europa.html">EUROPA</a></li>
+							<li><a href="destination-titan.html">TITAN</a></li>
+						</ul>
+					</nav>
+					<section class="travel-description">
+						<h1 class="travel-description__header">EUROPA</h1>
+						<p class="travel-description__text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+					</section>
+					<hr>
+					<section class="time-distance">
+						<div>
+							<h5 class="time-distance__distance">AVG. DISTANCE</h5>
+							<h2 class="time-distance__km">628 MIL. KM</h2>
+						</div>
 
-				<nav style="display: none;">
-					<ul>
-						<li><a href="../../index.html">HOME</a></li>
-						<li><a href="html/destination/destination-moon.html">DESTINATION</a></li>
-						<li><a href="html/crew/crew-commander.html">CREW</a></li>
-						<li><a href="html/destination/destination-moon.html">TECHNOLOGY</a></li>
-					</ul>
-				</nav>
-			</header>
-			<main>
-
-				<div class="intro">
-					<h4 class="intro__text"><span class="intro__number">03&nbsp;&nbsp;</span>PICK YOUR DESTINATION</h4>
+						<div>
+							<h5 class="time-distance__time">EST. TRAVEL TIME</h5>
+							<h2 class="time-distance__length">3 YEARS</h2>
+						</div>
+					</section>
 				</div>
-				<img class="planet" src="../../images/destination/image-europa.png" alt="The Moon">
-
-				<nav >
-					<ul class="destination-nav">
-						<li><a href="destination-moon.html">MOON</a></li>
-						<li><a href="destination-mars.html">MARS</a></li>
-						<li><a href="destination-europa.html">EUROPA</a></li>
-						<li><a href="destination-titan.html">TITAN</a></li>
-					</ul>
-				</nav>
-
-				<section class="travel-description">
-					<h1 class="travel-description__header">EUROPA</h1>
-					<p class="travel-description__text">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
-				</section>
-					
-					
-				
-
-				<section class="time-distance">
-					<h5 class="time-distance__distance">AVG. DISTANCE</h5>
-					<h2 class="time-distance__km">628 MIL. KM</h2>
-					<h5 class="time-distance__time">EST. TRAVEL TIME</h5>
-					<h2 class="time-distance__length">3 YEARS</h2>
-				</section>
-			</main>
-
-
-			
-			
-
-			
-		</div>
+			</div>
+		</main>
+		<script src="../../script.js"></script>
 	</body>
 </html>
