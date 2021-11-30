@@ -834,9 +834,8 @@ header {
 }
 @media only screen and (min-width: 768px) {
   .main-nav {
-    gap: 3rem;
     height: 6.558rem;
-    padding: 0 3rem;
+    padding: 0 2rem;
     position: relative;
     inset: auto;
     align-items: center;
