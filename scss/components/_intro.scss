@@ -3,10 +3,21 @@
 .intro {
     &__text {
         color: colors.$white;
+        @media only screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
     &__number {
         color: colors.$gray;
         font-weight: bold;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 88%;
+        margin: 5rem auto 0;
+    }
+    @media only screen and (min-width: 1440px) {
+        width: 80%;
+        margin-top: 7rem;
     }
 }
 

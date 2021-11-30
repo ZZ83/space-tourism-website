@@ -10,4 +10,5 @@ navToggle.addEventListener('click', () => {
         mainNav.setAttribute("data-visible", false);
         navToggle.setAttribute("aria-expanded", false);
     }
+    console.log("sdfsfd");
 })

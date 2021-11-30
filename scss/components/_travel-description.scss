@@ -1,10 +1,31 @@
 .travel-description {
     padding-bottom: 25px;
-    border-bottom: 1.5px solid rgba(151, 151, 151, 0.2);
     &__header {
         margin-bottom: 5px;
+        @media only screen and (min-width: 768px) {
+            font-size: 5.06rem;
+        }
+        @media only screen and (min-width: 1440px) {
+            text-align: left;
+            font-size: 6.558rem;
+            margin-top: 2rem;
+            margin-left: -0.5rem;
+        }
     }
+    &__text {
+        margin: auto;
+        max-width: 300px;
+        @media only screen and (min-width: 768px) {
+            max-width: 555px;
+        }
+        @media only screen and (min-width: 1440px) {
+            text-align: left;
+        }
+    }
+   
 }
+
+
 
 .time-distance {
     padding-bottom: 50px;
@@ -13,6 +34,7 @@
         margin: 40px 0 15px 0;
         
     }
+    
 
     &__km {
         margin: 0;
@@ -27,4 +49,27 @@
     &__length {
         margin: 0;
     }
+
+    h5,h2 {
+        @media only screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        justify-content: initial;
+        width: 100%;
+        margin: 0;
+        & > :nth-child(2) {
+            margin-left: 3rem;
+        }
+    }
 }
+

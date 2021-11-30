@@ -398,6 +398,21 @@ ul {
   }
 }
 
+hr {
+  width: 80%;
+  background-color: rgba(151, 151, 151, 0.2);
+}
+@media only screen and (min-width: 768px) {
+  hr {
+    width: 620px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  hr {
+    width: 100%;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -519,9 +534,26 @@ h4 {
 .intro__text {
   color: #FFFFFF;
 }
+@media only screen and (min-width: 768px) {
+  .intro__text {
+    text-align: left;
+  }
+}
 .intro__number {
   color: #808080;
   font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+  .intro {
+    width: 88%;
+    margin: 5rem auto 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .intro {
+    width: 80%;
+    margin-top: 7rem;
+  }
 }
 
 .logo {
@@ -542,18 +574,59 @@ h4 {
 }
 
 .planet {
+  margin: 0;
   width: 170px;
   height: 170px;
   display: block;
   margin: 50px auto;
 }
+@media only screen and (min-width: 768px) {
+  .planet {
+    width: 300px;
+    height: 300px;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .planet {
+    width: 445px;
+    height: 445px;
+    margin: 5rem 0 0 0;
+  }
+}
 
 .travel-description {
   padding-bottom: 25px;
-  border-bottom: 1.5px solid rgba(151, 151, 151, 0.2);
 }
 .travel-description__header {
   margin-bottom: 5px;
+}
+@media only screen and (min-width: 768px) {
+  .travel-description__header {
+    font-size: 5.06rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .travel-description__header {
+    text-align: left;
+    font-size: 6.558rem;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
+  }
+}
+.travel-description__text {
+  margin: auto;
+  max-width: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .travel-description__text {
+    max-width: 555px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .travel-description__text {
+    text-align: left;
+  }
 }
 
 .time-distance {
@@ -572,6 +645,30 @@ h4 {
 }
 .time-distance__length {
   margin: 0;
+}
+@media only screen and (min-width: 768px) {
+  .time-distance h5, .time-distance h2 {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .time-distance {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .time-distance {
+    justify-content: initial;
+    width: 100%;
+    margin: 0;
+  }
+  .time-distance > :nth-child(2) {
+    margin-left: 3rem;
+  }
 }
 
 .mobile-nav-toggle {
@@ -660,7 +757,7 @@ header {
     width: 100%;
     background: red;
     order: 1;
-    margin-right: -5rem;
+    margin-right: -4rem;
     margin-bottom: 5px;
     z-index: 100;
     background: #FFFFFF;
@@ -758,13 +855,34 @@ header {
 }
 
 .destination-nav {
+  width: 60%;
+  max-width: 320px;
   display: flex;
   justify-content: space-between;
-  width: 70%;
   margin: 0 auto;
 }
+.destination-nav li {
+  padding: 0.7rem 0;
+}
 .destination-nav li a {
+  font-size: 1rem;
   color: #D0D6F9;
+}
+@media only screen and (min-width: 768px) {
+  .destination-nav li a {
+    font-size: 1.215rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .destination-nav {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .destination-nav {
+    margin-left: 0;
+    text-align: left;
+  }
 }
 
 .homepage {
@@ -815,6 +933,21 @@ header {
   .homepage__paragraph {
     margin: 0;
     max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .destination-page {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .destination-page__inner {
+    width: 420px;
+    margin: 0;
   }
 }
 

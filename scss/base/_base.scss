@@ -50,6 +50,18 @@ li {
     }
 }
 
+hr {
+    width: 80%;
+    background-color: rgba(151, 151, 151, 0.2);
+    @media only screen and (min-width: 768px) {
+        width: 620px;
+    }
+    
+    @media only screen and (min-width: 1440px) {
+        width: 100%;
+    }
+}
+
 .sr-only {
     position: absolute; 
     width: 1px;

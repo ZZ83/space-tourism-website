@@ -1,0 +1,14 @@
+.destination-page {
+    @media only screen and (min-width: 1440px) {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner {
+        @media only screen and (min-width: 1440px) {
+            width: 420px;
+            margin: 0;
+        }  
+    }
+}

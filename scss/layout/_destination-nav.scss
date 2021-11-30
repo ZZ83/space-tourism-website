@@ -1,13 +1,27 @@
 @use '../abstract/colors';
 
 .destination-nav {
-    
+    width: 60%;
+    max-width: 320px;
     display: flex;
     justify-content: space-between;
-    width: 70%;
-    margin: 0  auto;
-    
+    margin: 0 auto;
+    li {
+        padding: 0.7rem 0;
+    }
     li a {
+        font-size: 1rem;
         color: colors.$tropical-blue;
+        @media only screen and (min-width: 768px) {
+            font-size: 1.215rem;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        margin-top: 4rem;
+    }
+    @media only screen and (min-width: 1440px) {
+        margin-left: 0;
+        text-align: left;
     }
 }
+
