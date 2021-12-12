@@ -4,21 +4,25 @@
     display: flex;
     justify-content: space-around;
     max-width: 115px;
-    li {
+    &__link {
+        display: inline-block;
         cursor: pointer;
-        width: 10px;
+        width:  10px;
         height: 10px; 
         background-color: #9797976c;
         border-radius: 50%;
         @media only screen and (min-width: 768px) {
-            width: 12px;
+            width:  12px;
             height: 12px; 
         }
         @media only screen and (min-width: 1440px) {
-            width: 15px;
+            width:  15px;
             height: 15px; 
         }
     }
+    &__link--active {
+        background-color: white;
+    } 
     @media only screen and (min-width: 1440px) {
         margin: 0;
     }

@@ -1,24 +1,49 @@
+.crew {
+    @media only screen and (min-width: 1440px) {
+        display: grid;
+    }
+}
+
+.crew-page {
+    @media only screen and (min-width: 1440px) {
+        align-self: end;
+        margin-top: -20px
+    }
+}
+
 .crew-section {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     display: grid;
     grid-template-columns:repeat(2, 1fr);
 }
 
-
-.commander {
+.crew-members {
     display: flex;
     border-bottom: 1px solid rgba(128, 128, 128, 0.315);
     width: 100%;
-    img {
+    &__image {
         margin: 20px auto 0;
-        width: 60%;
+        width: 65%;
+        
+    }
+    &__image--mark {
         @media only screen and (min-width: 1440px) {
-            margin-top: -100px;
-            width: 90%;
-            height: 750px;
+            width: 453px;
         }
     }
+    &__image--victor {
+        @media only screen and (min-width: 1440px) {
+            width: 554px;
+        }
+    }
+    &__image--anousheh {
+        @media only screen and (min-width: 1440px) {
+            width: 615px;
+        }
+    }
+
+
     grid-column-start: 1;
     grid-column-end:   3;
     @media only screen and (min-width: 768px) {
@@ -26,6 +51,7 @@
        grid-row-end:  4;
     }
     @media only screen and (min-width: 1440px) {
+        height: 640px;
         grid-column-start: 2;
         grid-column-end:   3;
         grid-row-start: 1;
@@ -46,8 +72,6 @@
         grid-row-start: 3;
         grid-row-end:   4; 
     }
-       
-    
 }
 
 .summary {
@@ -72,10 +96,11 @@
         }
     }
     &__paragraph {
-        width: 300px;
+        max-width: 300px;
         margin: 20px auto 80px;
         @media only screen and (min-width: 768px) {
             width: 420px;
+            max-width: 500px;
             margin-bottom: 0;
         }
         @media only screen and (min-width: 1440px) {
@@ -89,5 +114,11 @@
         grid-row-start: 1;
         grid-row-end:   3; 
         margin: 0;
+    }
+}
+
+.mark {
+    @media only screen and (min-width: 1440px) {
+        width: 203px;
     }
 }

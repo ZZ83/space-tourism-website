@@ -429,10 +429,6 @@ hr {
   pointer-events: none;
 }
 
-.c-active {
-  background-color: #fff;
-}
-
 @media only screen and (min-width: 768px) {
   .active {
     border-color: white;
@@ -995,39 +991,61 @@ header {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .crew {
+    display: grid;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .crew-page {
+    align-self: end;
+    margin-top: -20px;
+  }
+}
+
 .crew-section {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.commander {
+.crew-members {
   display: flex;
   border-bottom: 1px solid rgba(128, 128, 128, 0.315);
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.commander img {
+.crew-members__image {
   margin: 20px auto 0;
-  width: 60%;
+  width: 65%;
 }
 @media only screen and (min-width: 1440px) {
-  .commander img {
-    margin-top: -100px;
-    width: 90%;
-    height: 750px;
+  .crew-members__image--mark {
+    width: 453px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .crew-members__image--victor {
+    width: 554px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .crew-members__image--anousheh {
+    width: 615px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .commander {
+  .crew-members {
     grid-row-start: 3;
     grid-row-end: 4;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .commander {
+  .crew-members {
+    height: 640px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -1081,12 +1099,13 @@ header {
   }
 }
 .summary__paragraph {
-  width: 300px;
+  max-width: 300px;
   margin: 20px auto 80px;
 }
 @media only screen and (min-width: 768px) {
   .summary__paragraph {
     width: 420px;
+    max-width: 500px;
     margin-bottom: 0;
   }
 }
@@ -1106,6 +1125,12 @@ header {
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .mark {
+    width: 203px;
+  }
+}
+
 .crew-nav {
   width: 50%;
   margin: 30px auto;
@@ -1113,7 +1138,8 @@ header {
   justify-content: space-around;
   max-width: 115px;
 }
-.crew-nav li {
+.crew-nav__link {
+  display: inline-block;
   cursor: pointer;
   width: 10px;
   height: 10px;
@@ -1121,16 +1147,19 @@ header {
   border-radius: 50%;
 }
 @media only screen and (min-width: 768px) {
-  .crew-nav li {
+  .crew-nav__link {
     width: 12px;
     height: 12px;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .crew-nav li {
+  .crew-nav__link {
     width: 15px;
     height: 15px;
   }
+}
+.crew-nav__link--active {
+  background-color: white;
 }
 @media only screen and (min-width: 1440px) {
   .crew-nav {
