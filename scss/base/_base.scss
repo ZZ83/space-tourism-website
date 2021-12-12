@@ -1,3 +1,5 @@
+@use '../abstract/colors';
+
 *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -86,6 +88,10 @@ hr {
 .d-active {
     border-color: white;
     pointer-events: none;
+}
+
+.c-active {
+    background-color: #fff;
 }
 
 .active {

@@ -1,0 +1,25 @@
+.crew-nav {
+    width: 50%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 115px;
+    li {
+        cursor: pointer;
+        width: 10px;
+        height: 10px; 
+        background-color: #9797976c;
+        border-radius: 50%;
+        @media only screen and (min-width: 768px) {
+            width: 12px;
+            height: 12px; 
+        }
+        @media only screen and (min-width: 1440px) {
+            width: 15px;
+            height: 15px; 
+        }
+    }
+    @media only screen and (min-width: 1440px) {
+        margin: 0;
+    }
+}
