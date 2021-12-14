@@ -4,6 +4,7 @@
     margin: 35px auto 20px;
     width: 170px;
     &__list {
+        font-family: 'Bellefair', serif;
         width: 50px;
         height: 50px;  
         border: 2px solid rgba(128, 128, 128, 0.63);   
@@ -14,18 +15,18 @@
         @media only screen and (min-width: 768px) {
             width:  60px;
             height: 60px; 
+            font-size: 1.296rem;
         } 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1440px) {
             width:  80px;
             height: 80px; 
+            font-size: 1.68rem;
         } 
     }
     &__list--active {
         background-color: #fff;
         border-color: #fff;
-        
-            color: #0B0D17;
-    
+        color: #0B0D17;
     }
     @media only screen and (min-width: 768px) {
         width: 310px;
