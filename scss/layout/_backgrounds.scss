@@ -24,3 +24,11 @@
         variables.$desktop-crew-url, 
     );
 }
+
+.technology {
+    @include mixins.background-urls (
+        variables.$mobile-technology-url,
+        variables.$tablet-technology-url,
+        variables.$desktop-technology-url, 
+    );
+}

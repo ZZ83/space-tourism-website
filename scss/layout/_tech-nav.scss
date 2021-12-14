@@ -1,0 +1,41 @@
+.tech-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto 20px;
+    width: 170px;
+    &__list {
+        width: 50px;
+        height: 50px;  
+        border: 2px solid rgba(128, 128, 128, 0.63);   
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media only screen and (min-width: 768px) {
+            width:  60px;
+            height: 60px; 
+        } 
+        @media only screen and (min-width: 768px) {
+            width:  80px;
+            height: 80px; 
+        } 
+    }
+    &__list--active {
+        background-color: #fff;
+        border-color: #fff;
+        
+            color: #0B0D17;
+    
+    }
+    @media only screen and (min-width: 768px) {
+        width: 310px;
+    } 
+    @media only screen and (min-width: 1440px) {
+        flex-direction: column;
+        width: 160px;
+        justify-content: space-between;
+        margin: 0;
+        padding: 12px 0;
+        height: 380px;
+    } 
+}
