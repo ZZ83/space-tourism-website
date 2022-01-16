@@ -710,12 +710,12 @@ h4 {
   height: 2rem;
   border: 0;
   background-color: transparent;
-  background-image: url(../../images/shared/icon-hamburger.svg);
+  background-image: url(../images/shared/icon-hamburger.svg);
   background-repeat: no-repeat;
   z-index: 100;
 }
 .mobile-nav-toggle[aria-expanded=true] {
-  background-image: url(../../images/shared/icon-close.svg);
+  background-image: url(../images/shared/icon-close.svg);
 }
 @media only screen and (min-width: 768px) {
   .mobile-nav-toggle {
